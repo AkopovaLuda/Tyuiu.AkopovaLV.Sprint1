@@ -1,0 +1,13 @@
+﻿using tyuiu.cources.programming.interfaces.Sprint1;
+namespace Tyuiu.AkopovaLV.Sprint1.Task6.V3.Lib
+{
+    public class DataService : ISprint1Task6V3
+    {
+        public string LastLetterWord(string value)
+        {
+            value = string.Concat(value.Split(new Char[] { ' ', ',', '.', '!', '?', ':', ';' }, StringSplitOptions.RemoveEmptyEntries).Select(word => word.Last()));
+            return value;
+
+        }
+    }
+}
