@@ -9,8 +9,8 @@ namespace Tyuiu.AkopovaLV.Sprint1.Task4.V7.Test
         {
             DataService ds = new DataService();
             double x = 2;
-            double y = 1;
-            double z = 2.414;
+            double y = 2;
+            double z = 0.187;
             var res = ds.Calculate(x, y);
             Assert.AreEqual(z , res);
         }
