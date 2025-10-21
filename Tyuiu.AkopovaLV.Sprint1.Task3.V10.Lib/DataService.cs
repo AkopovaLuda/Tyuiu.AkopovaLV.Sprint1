@@ -7,7 +7,8 @@ namespace Tyuiu.AkopovaLV.Sprint1.Task3.V10.Lib
         {
             int rub = (int)number;
             int cop = (int)((number - rub) * 100);
-            return $"{rub} руб. {cop} коп.";
+            var z = $"{(int)number}.{(int)((number - (int)number) * 10)}";
+            return $"{z} руб. - это {rub} руб. {cop} коп.";
         }
     }
 }

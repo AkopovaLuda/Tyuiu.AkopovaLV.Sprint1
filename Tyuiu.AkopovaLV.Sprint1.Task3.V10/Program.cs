@@ -30,7 +30,6 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.ReadKey();
         string result = ds.NumberToMoney(number);
-        string num = $"{(int)number}.{(int)((number - (int)number) * 10)}";
-        Console.WriteLine($"{num} руб. — это {result}");
+        Console.WriteLine($"{result}");
     }
 }
