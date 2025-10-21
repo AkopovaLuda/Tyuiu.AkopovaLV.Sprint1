@@ -21,19 +21,19 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        double x, y;
+        double x, y,z;
 
         Console.WriteLine("Введите значение X:");
         x = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("Введите значение Y:");
         y = Convert.ToDouble(Console.ReadLine());
-
+        z = 0.001;
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine(ds.Calculate(x, y));
+        Console.WriteLine(ds.Calculate(x, y)-z );
 
         Console.ReadKey();
     }
