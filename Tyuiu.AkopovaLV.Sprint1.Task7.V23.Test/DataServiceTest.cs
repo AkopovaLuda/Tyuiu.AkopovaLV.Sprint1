@@ -11,7 +11,7 @@ namespace Tyuiu.AkopovaLV.Sprint1.Task7.V23.Test
             double x = 1;
             double y = 2;
             double wait = Math.Round(1.2651, 3);
-            var res = Math.Round(ds.Calculate(x, y), 3);
+            var res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
 
         }
